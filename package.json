@@ -1,26 +1,29 @@
 {
 	"name": "react-text-autocomplete",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
 	"types": "./dist/esm/index.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/gapon2401/my-react-typescript-package.git"
+		"url": "git@github.com:iamtomhanks/react-text-autocomplete.git"
 	},
 	"scripts": {
 		"build": "npm run build:esm && npm run build:cjs",
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
 		"prepare": "npm run build",
-		"prepublishOnly": "npm run lint",
+		"prepublishOnly": "",
 		"lint": "tsc --noEmit && eslint src/**/*.ts{,x} --cache --max-warnings=0 --quiet",
 		"lint:fix": "npx eslint src --fix --quiet"
 	},
-	"keywords": [],
-	"author": "gapon2401",
-	"license": "ISC",
+	"keywords": [
+		"react",
+		"autocomplete"
+	],
+	"author": "Brec (iamtomhanks)",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/react": "^18.0.12",
 		"@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -38,5 +41,13 @@
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
 		"typescript": "^4.7.3"
-	}
+	},
+	"peerDependencies": {
+		"react": ">=16"
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	]
 }

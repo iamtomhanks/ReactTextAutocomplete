@@ -1,0 +1,3 @@
+# react-text-autocomplete
+
+React component for completing text as you type, like Gmail...
